@@ -67,4 +67,57 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Title
+
+    EQUIP9-MERN: Full Stack Hands-on Test
+
+## Objective
+
+    Develop a Registration, Login and Home Page.
+
+## Tech Stack
+
+    HTML, CSS, JavaScript, Node.js, React.js, SQL
+
+## Completion Instructions
+
+Create a Registration Page Screen. With Following Fields
+
+1. First Name
+2. Last Name
+3. Mobile Number (Take any 10 digits for demo purpose)
+4. Password
+   On the same user see an option of social media login:
+5. Login by Google
+6. Login by Facebook
+7. Login By Apple Id
+
+### Functionality
+
+1. Check registration is complete and if entry is created successfully then
+   a. Redirect the user to the login page.
+   b. On Login page  
+   i. Prompt the Mobile Number and Password.
+   ii. Match the password and generate the on-access token decide the  
+   authenticity of user.
+   iii. If user is validated then land him to blank landing page stating “Good  
+   Morning/ Afternoon/ or Evening (based on the time) Mr. First Name, Last  
+   Name”
+
+## Resources
+
+React Icons: Google, Facebook, Apple,
+
+### Third-party packages
+
+    1.react-router-dom
+    2. js-cookie
+    3.react-icons
+    4.jsonwebtoken
+    5.bcrypt
+    6.path
+    7.express
+    8.sqlite
+    9.sqlite3

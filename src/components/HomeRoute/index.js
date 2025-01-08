@@ -5,7 +5,6 @@ import { Component } from "react";
 import Cookies from "js-cookie";
 import { Navigate } from "react-router-dom";
 
-
 class HomeRoute extends Component {
   state = {
     firstName: "",
@@ -26,8 +25,10 @@ class HomeRoute extends Component {
     };
     const response = await fetch(url, options);
     const data = await response.json();
-    const { first_name, last_name } = data;
-    console.log(response)
+    const {user_details}=data
+    const { first_name, last_name } = user_details;
+    console.log(response);
+    console.log(data)
     this.setState({ firstName: first_name, lastName: last_name });
   };
   render() {
@@ -39,9 +40,9 @@ class HomeRoute extends Component {
         : hour < 18
         ? "Good Afternoon"
         : "Good Evening";
-    const jwtToken = Cookies.get("jwtToken");
+    const jwtToken = Cookies.get("jwt_token");
     if (jwtToken === undefined) {
-      <Navigate to='/login' />;
+      return <Navigate to='/login' />;
     }
 
     return (

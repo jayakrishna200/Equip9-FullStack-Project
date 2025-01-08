@@ -36,6 +36,7 @@ class LoginRoute extends Component {
     Cookies.set("mobile_no", mobileNo, { expires: 30 });
 
     const { navigate } = this.props;
+    console.log("at Login",jwtToken)
 
     Cookies.set("jwt_token", jwtToken, {
       expires: 30,
